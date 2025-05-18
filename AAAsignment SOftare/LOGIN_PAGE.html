@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Departments Buying Login</title>
+  <link rel="stylesheet" href="LOGIN_PAGE.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="login-section">
+      <h2 class="tit" style="color: rgb(44, 104, 182); text-align:center;">
+        <img src="images/7115350_41315.png" style="height: 100px;" alt="DeptCart Logo"> DeptCart
+      </h2>
+
+      <h2 style="text-align: center;">LOGIN to your account</h2>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+
+      <hr><br><br>
+
+      <!-- Login Form (Fix: points to PHP not HTML) -->
+      <form id="loginForm" method="POST" action="LOGIN_PAGE.php">
+        <input type="text" name="username" placeholder="Enter your username" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <button type="submit">Sign In</button>
+</form>
+
+  <div class="register-link">
+  <span>You dont have an account register now ➡️</span>
+  <button type="button" onclick="window.location.href='REG_PAGE.html'">Back to registration</button>
+</div>
+
+        
+      </form>
+    </div>
+
+    <!-- Right side image -->
+    <div class="image-section"></div>
+  </div>
+</body>
+</html>

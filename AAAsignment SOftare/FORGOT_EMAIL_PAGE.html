@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Departments Buying Login</title>
+  <link rel="stylesheet" href="FORGOT_EMAIL_PAGE.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body> 
+<!-- Forgot Email Modal -->
+<div id="forgotEmailModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h3>Forgot your email?</h3>
+    <p>Please enter your unique username</p>
+    <input type="text" id="usernameForEmail" placeholder="Enter your username" required />
+    <button onclick="recoverEmail()">Submit</button>
+    <a href="LOGIN_PAGE.html" class="forgot-email">Back To Login Page?</a>
+    <p id="emailRecoveryMessage"></p>
+  </div>
+</div>
+</body>

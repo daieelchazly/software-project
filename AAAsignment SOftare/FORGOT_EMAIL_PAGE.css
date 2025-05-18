@@ -1,0 +1,114 @@
+/* Background Image for the Entire Page */
+body, html {
+  height: 100%;
+  margin: 0;
+  background-image: url('images/R.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Modal Container */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #e0d8d8;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Close Button */
+.close-btn {
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal Title */
+.modal-content h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Modal Instructions Text */
+.modal-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Input Field */
+.modal-content input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+/* Submit Button */
+.modal-content button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #005fa3;
+}
+
+/* Back to Login Link */
+.modal-content a.forgot-email {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #007acc;
+  text-decoration: none;
+  text-align: center;
+}
+
+.modal-content a.forgot-email:hover {
+  text-decoration: underline;
+}
+
+/* Message Display */
+#emailRecoveryMessage {
+  margin-top: 10px;
+  color: green;
+  font-size: 16px;
+}
